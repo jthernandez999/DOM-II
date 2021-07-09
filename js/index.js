@@ -18,7 +18,7 @@ let navAnchors = document.querySelectorAll('.nav')[0]
 console.log(navAnchors)
 
 navAnchors.addEventListener('mouseover', function(event) {
-    event.target.style.color = "white";
+    event.target.style.color = "brown";
     setTimeout(function() {
         event.target.style.color = 'black';
         event.target.style.fontSize = '20px';
@@ -41,7 +41,7 @@ h2.addEventListener('mouseleave', function(event){
 let h2LetsGo = document.querySelectorAll('h2')[1]
 h2LetsGo.addEventListener('mouseleave', function(event){
     event.target.style.fontSize = '50px'
-    event.target.style.color = 'red'
+    event.target.style.color = 'orange'
 })
 
 let pContent = document.querySelector('p')
