@@ -1,7 +1,7 @@
 // Your code goes here
-const bodyColor = document.querySelector('body')
+const body = document.querySelector('body')
 
-bodyColor.addEventListener('click', function(event){
+body.addEventListener('click', function(event){
     document.body.style.backgroundColor = 'black'
     document.body.style.color ='white'
 })
@@ -21,6 +21,7 @@ navAnchors.addEventListener('mouseover', function(event) {
     event.target.style.color = "white";
     setTimeout(function() {
         event.target.style.color = 'black';
+        event.target.style.fontSize = '20px';
     }, 500)
 })
 
@@ -40,7 +41,7 @@ h2.addEventListener('mouseleave', function(event){
 let h2LetsGo = document.querySelectorAll('h2')[1]
 h2LetsGo.addEventListener('mouseleave', function(event){
     event.target.style.fontSize = '50px'
-    event.target.style.color = 'orange'
+    event.target.style.color = 'red'
 })
 
 let pContent = document.querySelector('p')
@@ -53,4 +54,21 @@ pContent.addEventListener('keydown', function(event) {
 
 window.addEventListener('load', function(event) {
     this.alert('Loaded!')
+})
+
+
+window.addEventListener('resize', function(event) {
+    var newWidth = window.innerWidth;
+    var newHeight = window.innerHeight;
+    console.log('resized window')
+})
+
+window.addEventListener('scroll', event => {
+    document.body.style.backgroundColor = 'beige'; 
+})
+
+
+body.addEventListener('dblclick', function(event) {
+    document.body.style.backgroundColor = 'white';
+    document.body.style.color = 'black';
 })
