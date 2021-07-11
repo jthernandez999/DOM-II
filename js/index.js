@@ -6,6 +6,10 @@ body.addEventListener('click', function(event){
     document.body.style.color ='white'
 })
 
+body.addEventListener('mouseup', function(event){
+    document.body.style.fontSize = '125%'
+})
+
 document.addEventListener('keydown', function(event) {
     if (event.key === "Escape") {
         document.body.style.backgroundColor = 'yellow'
@@ -72,3 +76,43 @@ body.addEventListener('dblclick', function(event) {
     document.body.style.backgroundColor = 'white';
     document.body.style.color = 'black';
 })
+
+let busImage = document.querySelector('.intro img')
+console.log(busImage)
+
+busImage.addEventListener('mouseover', function(event) {
+    this.style = 'box-shadow: 2px 2px 2px grey'
+    this.width = '1100'
+})
+
+busImage.addEventListener('mouseout', function(event) {
+    this.style = ''
+    this.width = '850'
+})
+
+let adventureImg = document.querySelector('.content-section img')
+console.log(adventureImg)
+
+adventureImg.addEventListener('mouseover', function(event) {
+    this.style = 'box-shadow: 2px 2px 2px grey'
+    this.width = '1100'
+})
+
+adventureImg.addEventListener('mouseout', function(event) {
+    this.style = ''
+    this.width = '600'
+})
+
+let funImg = document.querySelector('.inverse-content img')
+console.log(funImg)
+
+funImg.addEventListener('mouseover', function(event) {
+    this.style = 'box-shadow: 2px 2px 2px grey'
+    this.width = '1100'
+})
+
+funImg.addEventListener('mouseout', function(event) {
+    this.style = ''
+    this.width = '600'
+})
+
